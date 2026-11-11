@@ -1,0 +1,8 @@
+node_modules/
+tmp/
+playwright/.cache/
+playwright/.auth/
+.env
+!.env.example
+tests/.features-gen/
+npm-debug.log*

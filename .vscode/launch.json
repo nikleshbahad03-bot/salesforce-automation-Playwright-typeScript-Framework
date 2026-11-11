@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug BDD scenario by tag",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm.cmd test -- --grep \"${input:scenarioTag}\" --project=chromium --headed",
+      "cwd": "${workspaceFolder}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "scenarioTag",
+      "type": "promptString",
+      "description": "Gherkin scenario tag (for example, @Test1)",
+      "default": "@Test3"
+    }
+  ]
+}

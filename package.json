@@ -1,0 +1,24 @@
+{
+  "name": "sfo-salesforce-typescript-automation-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reusable Playwright BDD starter for Salesforce UI and SOQL automation",
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "npm run bddgen && playwright test",
+    "test:ui": "npm run bddgen && playwright test --ui",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report tmp/playwright-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^22.13.10",
+    "dotenv": "^16.4.5",
+    "jsforce": "^3.10.13",
+    "playwright-bdd": "^9.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "playwright": "^1.65.0"
+  }
+}
